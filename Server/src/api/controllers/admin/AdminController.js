@@ -45,6 +45,7 @@ module.exports = {
                     return;
                 })
                 .catch(UpdateErr =>{
+                    debug(UpdateErr);
                     res.status(404).send({"Unable to update Category list": UpdateErr.message})
                 });
             res.status(201).json(data);
@@ -77,20 +78,61 @@ module.exports = {
                     return;
                 })
                 .catch(UpdateErr =>{
+                    debug(UpdateErr.message);
                     res.status(400).send({"Unable to update SubCategory list": UpdateErr.message})
                 });
             res.status(201).json(data);
             return;
         })
         .catch(CreateError =>{
-            debug(CreateError);
+            debug(CreateError.message);
             res.status(400).send({"Failed to Create Product": CreateError.message});
         });
-    }
+    },
 
     /**
      * Read functions
      */
+    //find specific product
+    find_product: function(req,res){
+        const productID = req.params.id;
+        Product.findById(productID)
+        .then(data =>{
+            res.status(200).json(data);
+            return;
+        })
+        .catch(FindErr =>{
+            debug(FindErr.message);
+            res.status(404).send({"Find Error": FindErr.message});
+        });
+    },
+    //find specific Sub category
+    find_sub_category: function(req,res){
+        const subCategoryID = req.params.id;
+        SubCategory.findById(subCategoryID)
+        .then(data =>{
+            res.status(200).json(data);
+            return;
+        })
+        .catch(FindErr =>{
+            debug(FindErr.message);
+            res.status(404).send({"Find Error": FindErr.message});
+        });
+    },
+
+    //find specific category
+    find_category: function(req,res){
+        const categoryID = req.params.id;
+        Category.findById(categoryID)
+        .then(data =>{
+            res.status(200).json(data);
+            return;
+        })
+        .catch(FindErr =>{
+            debug(FindErr.message);
+            res.status(404).send({"Find Error": FindErr.message});
+        });
+    },
 
     /**
      * Update Functions
@@ -100,4 +142,8 @@ module.exports = {
      * Delete functions
      */
 
+
+    /**
+     * functions to List all data
+     */
 }

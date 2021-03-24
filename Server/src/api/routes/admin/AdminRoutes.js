@@ -15,6 +15,12 @@ adminRouter.post('/create/product',adminController.create_product);
 /**
  * Read Routes
  */
+//find category data
+adminRouter.get('/category/:id',adminController.find_category);
+//find sub-category data
+adminRouter.get('/subcategory/:id',adminController.find_sub_category);
+//find product data
+adminRouter.get('/product/:id',adminController.find_product);
 
 /**
  * Update Routes
