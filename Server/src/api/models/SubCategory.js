@@ -6,7 +6,10 @@ const SubCategory = new mongoose.Schema({
         unique: true,
         required: true
     },
-
+    category_id:{
+        type: String,
+        required: true
+    },
     products: [{
         type: mongoose.Schema.Types.ObjectId, ref:'Product'
     }],

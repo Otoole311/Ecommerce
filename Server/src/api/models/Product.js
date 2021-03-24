@@ -12,6 +12,10 @@ const Product = new mongoose.Schema({
     price: {
         type: Number,
         required: true
+    },
+    subcategory_id:{
+        type: String,
+        required: true        
     }
 },{
     timestamps: true
