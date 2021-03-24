@@ -1,0 +1,9 @@
+{
+    "Create Error": {
+        "title": "Failed to Create Item"
+    },
+
+    "security": {
+        "tokenLife": 3600
+    }
+}
