@@ -32,3 +32,9 @@ db().then(() => createServer(app).listen(port, ()=>{
     debug(`listening on port + ${chalk.green(port)}`);
 })).catch((err) =>{
 });
+
+//routes
+const adminRouter = require('./src/api/routes/admin/AdminRoutes');
+
+//use routes
+app.use('/admin',adminRouter);
