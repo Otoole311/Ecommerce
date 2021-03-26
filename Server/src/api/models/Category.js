@@ -1,4 +1,5 @@
 let mongoose = require('mongoose');
+const SubCategory = require('../models/SubCategory');
 
 const Category = new mongoose.Schema({
     name: {
@@ -6,11 +7,14 @@ const Category = new mongoose.Schema({
         unique: true,
         required: true
     },
-    SubCategories:[{
-        type: mongoose.Schema.Types.ObjectId, ref:'SubCategories'
-    }],
 },{
     timestamps: true
 });
+
+Category.pre('deleteOne', {document: true}, async function(next){
+    await SubCategory.deleteMany({category_id: this._id}).exec();
+    next();
+});
+
 
 module.exports = mongoose.model('Category',Category);

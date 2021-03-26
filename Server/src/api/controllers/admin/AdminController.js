@@ -27,8 +27,6 @@ module.exports = {
 
     //create sub category
     create_sub_category: function(req,res){
-        const category_id = req.body.category_id;
-
         const newSubCategory = new SubCategory({
             name: req.body.name,
             category_id: req.body.category_id
@@ -36,18 +34,6 @@ module.exports = {
         
         newSubCategory.save()
         .then(data =>{
-                //save subcategory id to category
-                Category.findOneAndUpdate(category_id,{
-                    $push: {SubCategories: data._id}
-                },{
-                    new: true
-                }).then(updateData => {
-                    return;
-                })
-                .catch(UpdateErr =>{
-                    debug(UpdateErr);
-                    res.status(404).send({"Unable to update Category list": UpdateErr.message})
-                });
             res.status(201).json(data);
             return;
         })
@@ -59,28 +45,13 @@ module.exports = {
 
     //create a product
     create_product: function(req,res){
-        const subCategoryID = req.body.subcategory_id; 
-
         const newProduct = new Product({
             name: req.body.name,
             price: req.body.price,
-            subcategory_id: subCategoryID
+            subcategory_id: req.body.subcategory_id,
         });
-
         newProduct.save()
         .then(data =>{
-                //save product to subcategory
-                SubCategory.findOneAndUpdate(subCategoryID,{
-                    $push: {products: data._id}
-                },{
-                    new: true
-                }).then(updateData => {
-                    return;
-                })
-                .catch(UpdateErr =>{
-                    debug(UpdateErr.message);
-                    res.status(400).send({"Unable to update SubCategory list": UpdateErr.message})
-                });
             res.status(201).json(data);
             return;
         })
@@ -137,11 +108,114 @@ module.exports = {
     /**
      * Update Functions
      */
+    //update category
+    update_category: function(req,res){
+        const categoryID = req.params.id;
+        const name = req.body.name;
+        const updates = {name}
+
+        Category.findOneAndUpdate(categoryID,{
+            $set: updates
+        },{
+            new:true
+        }).then(data =>{
+            res.status(200).json(data);
+            return;
+        })
+        .catch(UpdateErr =>{
+            debug(UpdateErr)
+            res.status(400).send({"Error Updating Category": UpdateErr.message});
+        })
+    },
+    //update Subcategory
+    update_SubCategory: function(req,res){
+        const subcategoryID = req.params.id;
+        const name = req.body.name;
+        const category_id = req.body.category_id;
+        const updates = {name, category_id};
+
+        SubCategory.findOneAndUpdate(subcategoryID,{
+            $set: updates
+        },{
+            new:true
+        }).then(data =>{
+            res.status(200).json(data);
+            return;
+        })
+        .catch(UpdateErr =>{
+            debug(UpdateErr)
+            res.status(400).send({"Error Updating Sub-Category": UpdateErr.message});
+        })
+    },
+    //update products
+    update_products: function(req,res){
+        const productID = req.params.id;
+        const name = req.body.name;
+        const price = req.body.price;
+        const subcategory_id = req.body.subcategory_id;
+        const updates = {name, price,subcategory_id};
+
+        Product.findByIdAndUpdate(productID,{
+            $set: updates
+        },{
+            new: true
+        }).then(data =>{
+            res.status(200).json(data);
+            return;
+        })
+        .catch(UpdateErr =>{
+            debug(UpdateErr)
+            res.status(400).send({"Error Updating Product": UpdateErr.message});
+        })
+    },
 
     /**
      * Delete functions
      */
+    //delete category
+    delete_category: async function(req,res){
+        const categoryID = req.params.id;
+        try{
+            const CategoryDoc = await Category.findOne({_id: categoryID})
+            await CategoryDoc.deleteOne();
+            res.status(200).json({
+                "message": "Successfully Deleted Sub Category"
+            });
+        }catch(error){
+            debug(error)
+            res.status(500).send({"Error": error.message})
+        }
+    },
 
+    //delete subcategory
+    delete_sub_category: async function(req,res){
+        const subCategoryID = req.params.id;        
+        try{
+            const subCategoryDoc = await SubCategory.findOne({_id: subCategoryID})
+            await subCategoryDoc.deleteOne()
+            res.status(200).json({
+                "message": "Successfully Deleted Sub Category"
+            });
+        }catch(error){
+            debug(error)
+            res.status(500).send({"Error": error.message})
+        }
+    },
+    //delete product
+    delete_product: async function(req, res){
+        const productID = req.params.id;
+
+        try{
+            const productDoc = await Product.findOne({_id: productID});
+            await productDoc.deleteOne()
+            res.status(200).json({
+                "message": "Successfully Deleted Product"
+            });
+        }catch(error){
+            debug(error)
+            res.status(500).send({"Error": error.message})
+        }        
+    },
 
     /**
      * functions to List all data

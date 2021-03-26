@@ -25,9 +25,21 @@ adminRouter.get('/product/:id',adminController.find_product);
 /**
  * Update Routes
  */
+//update Category data
+adminRouter.put('/update/category/:id',adminController.update_category);
+//update Sub category
+adminRouter.put('/update/subcategory/:id',adminController.update_SubCategory);
+//update Products
+adminRouter.put('/update/product/:id',adminController.update_products);
 
 /**
  * Delete Routes
  */
+//delete products
+adminRouter.delete('/delete/product/:id',adminController.delete_product);
+//delete sub category
+adminRouter.delete('/delete/subcategory/:id',adminController.delete_sub_category);
+//delte category
+adminRouter.delete('/delete/category/:id',adminController.delete_category);
 
 module.exports = adminRouter;
