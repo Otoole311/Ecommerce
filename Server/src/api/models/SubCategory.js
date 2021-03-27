@@ -17,17 +17,17 @@ const SubCategory = new mongoose.Schema({
 });
 
 /**
- * Delete all products under subcategory when subcategory is deleted.
+ * Cascade delete for a sub-category
  */
 SubCategory.pre('deleteOne',{document: true}, async function(next){
+    //console.log("Deleting Products")
     await Product.deleteMany({subcategory_id: this._id}).exec();
     next();
 });
 
-SubCategory.pre('deleteMany',{document: true}, async function(next){
-    console.log(this)
-    await Product.deleteMany({subcategory_id: this._id}).exec();
-    next();
-});
+/**
+ * Cascade delete for all categories
+ */
+
 
 module.exports = mongoose.model('SubCategory',SubCategory);

@@ -204,7 +204,6 @@ module.exports = {
     //delete product
     delete_product: async function(req, res){
         const productID = req.params.id;
-
         try{
             const productDoc = await Product.findOne({_id: productID});
             await productDoc.deleteOne()
