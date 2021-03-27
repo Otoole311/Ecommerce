@@ -18,3 +18,9 @@
  * 
  */
 
+const debug = require('debug')('app:ClientController');
+
+module.exports = {
+    
+}
+
