@@ -1,3 +1,7 @@
+const debug = require('debug')('app:ClientController');
+const Category = require('../../models/Category');
+const SubCategory = require('../../models/SubCategory');
+const Product = require('../../models/Product');
 /**
  * Functions to implement
  * 
@@ -18,9 +22,17 @@
  * 
  */
 
-const debug = require('debug')('app:ClientController');
+
 
 module.exports = {
-    
+    list_categories: function(req,res){
+        Category.find({},function(err, docs){
+            if(err){
+                debug(err)
+                res.status(404).send({Message: "Unable to Fetch categories."})
+            }
+            res.status(200).json(docs)
+        })
+    }
 }
 
