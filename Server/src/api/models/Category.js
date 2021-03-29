@@ -9,10 +9,19 @@ const Category = new mongoose.Schema({
         unique: true,
         required: true
     },
+
+    shop_id: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Shop',
+        required: true
+    }
 },{
     timestamps: true
 });
 
+/**
+ * Defining foreign key references
+ */
 Category.virtual('SubCategories',{
     ref: 'SubCategory', //the model to use
     localField: '_id', // find in model, where localField
@@ -33,7 +42,7 @@ Category.pre('deleteOne', {document: true}, async function(next){
             throw (err);
         }
         docs.forEach( async function(subCategoryDoc){
-            console.log(subCategoryDoc);
+            //console.log(subCategoryDoc);
             try{
                 //console.log("Deleting Sub-Category")
                 await subCategoryDoc.deleteOne();
