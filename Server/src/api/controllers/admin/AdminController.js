@@ -81,6 +81,7 @@ module.exports = {
     find_sub_category: function(req,res){
         const subCategoryID = req.params.id;
         SubCategory.findById(subCategoryID)
+        .populate({path: 'Products', select: 'name price'})
         .then(data =>{
             res.status(200).json(data);
             return;
@@ -95,6 +96,7 @@ module.exports = {
     find_category: function(req,res){
         const categoryID = req.params.id;
         Category.findById(categoryID)
+        .populate({path: 'SubCategories', select: 'name'})
         .then(data =>{
             res.status(200).json(data);
             return;

@@ -13,6 +13,16 @@ const Category = new mongoose.Schema({
     timestamps: true
 });
 
+Category.virtual('SubCategories',{
+    ref: 'SubCategory', //the model to use
+    localField: '_id', // find in model, where localField
+    foreignField: 'category_id', //is equal to foreignField
+});
+
+//set Object and json property to true. default is set to false
+Category.set('toObject',{virtuals: true})
+Category.set('toJSON',{virtuals: true});
+
 /**
  * Cascade delete for  a category
  */

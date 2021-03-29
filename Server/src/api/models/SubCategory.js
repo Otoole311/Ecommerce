@@ -16,6 +16,15 @@ const SubCategory = new mongoose.Schema({
     timestamps: true
 });
 
+SubCategory.virtual('Products',{
+    ref: 'Product',
+    localField: '_id',
+    foreignField: 'subcategory_id'
+});
+
+SubCategory.set('toObject',{virtuals: true});
+SubCategory.set('toJSON',{virtuals: true});
+
 /**
  * Cascade delete for a sub-category
  */
