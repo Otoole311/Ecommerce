@@ -11,5 +11,6 @@ module.exports = function () {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useFindAndModify: false,
-    });
+    }).then(() => console.log("Connected to Database."))
+    .catch(err => console.error("Connection error", err));
 };
