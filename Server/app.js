@@ -36,7 +36,9 @@ db().then(() => createServer(app).listen(port, ()=>{
 //routes
 const adminRouter = require('./src/api/routes/admin/AdminRoutes');
 const ClientRouter = require('./src/api/routes/client/ClientRoutes');
+const adminAuthRouter = require('./src/api/routes/admin/auth/AuthRoutes');
 
 //use routes
 app.use('/admin',adminRouter);
+app.use('/admin/auth',adminAuthRouter);
 app.use('/client',ClientRouter);
