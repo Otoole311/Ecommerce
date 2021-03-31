@@ -6,10 +6,11 @@ const Order = new mongoose.Schema({
         ref:'Customer',
         requred: true
     },
-    product_id:{
-        type: mongoose.Schema.Types.ObjectId,
-        ref:'Product',
-        required: true
+    status:{
+        type: String,
+    },
+    amount:{
+        type: Number
     }
 },{
     timestamps: true,

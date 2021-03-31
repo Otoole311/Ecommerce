@@ -16,7 +16,8 @@ const Category = new mongoose.Schema({
         required: true
     }
 },{
-    timestamps: true
+    timestamps: true,
+    strict: true
 });
 
 /**

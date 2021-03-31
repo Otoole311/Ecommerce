@@ -9,12 +9,13 @@ const Shop = new mongoose.Schema({
         unique: true,
         required: true
     },
-    /* owner:{
-        type: mongoose.Schema.Types.ObjectId, ref: 'Owner',
-        required: true
-    } */
+    user_id:{
+        type: mongoose.Schema.Types.ObjectId, ref: 'User',
+        //required: true
+    }
 },{
-    timestamps: true
+    timestamps: true,
+    strict: true
 });
 
 /**

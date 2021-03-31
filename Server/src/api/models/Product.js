@@ -18,12 +18,13 @@ const Product = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId, ref:'SubCategory',
         required: true        
     },
-    /* owner:{
-        type: mongoose.Schema.Types.ObjectId, ref: 'Owner',
-        required: true
-    } */
+    user_id:{
+        type: mongoose.Schema.Types.ObjectId, ref: 'User',
+        //required: true
+    } 
 },{
-    timestamps: true
+    timestamps: true,
+    strict: true
 });
 
 

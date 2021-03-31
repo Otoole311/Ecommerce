@@ -13,7 +13,8 @@ const SubCategory = new mongoose.Schema({
         
     },
 },{
-    timestamps: true
+    timestamps: true,
+    strict: true
 });
 
 SubCategory.virtual('Products',{
