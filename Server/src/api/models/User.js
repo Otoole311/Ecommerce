@@ -18,4 +18,5 @@ const User = new mongoose.Schema({
     },
 });
 
+require('./model-methods/UserMethods')(User);
 module.exports = mongoose.model('User',User); 
