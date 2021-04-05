@@ -16,7 +16,7 @@ module.exports = {
 authenticate: (req, res, next) => {
     passportJWT.authenticate('jwt', { session: false }, (err, user, info) => {
         if (err) {
-            debug(err);
+            debug(err)
         return next(err);
     }
 

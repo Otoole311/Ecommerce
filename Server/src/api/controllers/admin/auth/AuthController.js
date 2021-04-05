@@ -2,9 +2,6 @@ const debug = require('debug')('app:AuthController');
 const User = require('../../../models/User');
 const passport = require('passport');
 const passportLocal = require('../../../services/passport/passport-local');
-//const  {hashString} = require('../../../utils/helpers');
-//const bcrypt = require('bcrypt');
-//const saltRounds = 10;
 
 /**
  * This function creates a cookie from the token
@@ -43,8 +40,6 @@ module.exports = {
                 try{
                     if(err || !user){
                         const{statusCode = 400, message} = info;
-                        //console.log('Eror is here')
-                        //console.log(user)
                         debug(err)
                         return res.status(statusCode).json({
                             status: "error",
@@ -61,25 +56,6 @@ module.exports = {
                 }
             }
         )(req,res,next);
-        /* const password = req.body.password;
-        const hashedPassword = bcrypt.hashSync(password, saltRounds);
-
-        const newUser = new User({
-            name: req.body.name,
-            email: req.body.email,
-            password: hashedPassword
-        });
-
-        newUser.save()
-        .then(() =>{
-            res.status(201).json({Message: "Register Successful"});
-        })
-        .catch(CreateError =>{
-            debug(CreateError);
-            res.status(400).send({
-                "Failed to create User": CreateError.message
-            });
-        }) */
     },
 
     //Login user
@@ -101,33 +77,5 @@ module.exports = {
             // generate a signed son web token with the contents of user object and return it in the response
             createCookieFromToken(user, 200, req, res);
         })(req, res, next);
-
-        /* const email = req.body.email;
-        const password = req.body.password;
-        User.findOne({email: email}, function(err, UserData){
-            if(err){
-                debug(err.message);
-                res.status(401).json({Error: "User not found"});
-            }
-            //console.log(UserData)
-            if(bcrypt.compareSync(password,UserData.password)){
-                res.status(200).json({
-                    Message: "Login Successful"
-                });
-            }else{
-                res.status(401).json({Message: "Invalid credentials"});
-            }
-            
-        }); */
-
     },
-
-    protectedRoute: async (req, res) => {
-        res.status(200).json({
-            status: "success",
-            data: {
-            message: "Yes you are. You are a Thor-n times developer",
-            },
-        });
-    }, 
 }
