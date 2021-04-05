@@ -13,4 +13,9 @@ adminAuthRouter.post('/register', authController.register);
  */
 adminAuthRouter.post('/login',authController.login);
 
+/**
+ * Logout user
+ */
+adminAuthRouter.get('/logout',authController.logout);
+
 module.exports = adminAuthRouter;

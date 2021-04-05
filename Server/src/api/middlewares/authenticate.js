@@ -6,9 +6,9 @@ const passportJWT  = require('../services/passport/config');
 module.exports = {
 
 /**
- * this function checks the request headers from the jwt.
- * it scans to see if there is a user associated with it and throws
- * back an unauthorized erro if there is nond.
+ * this function checks the request headers for the cookie name 'jwt'.
+ * it scans to see if there is a user associated with a token and throws
+ * back an unauthorized error if none is found.
  * @param {*} req 
  * @param {*} res 
  * @param {*} next 
@@ -25,7 +25,9 @@ authenticate: (req, res, next) => {
             401,
         'invalid token, please log in or sign up',
         ); */
-        return 'invalid token, please log in or sign up';
+        //return 'invalid token, please log in or sign up';
+        res.status(401).send({UnAuthorised: "invalid token, please log in or sign up"})
+        return
     }
 
     req.user = user;

@@ -3,6 +3,7 @@ const User = require('../../../models/User');
 const passport = require('passport');
 const passportLocal = require('../../../services/passport/passport-local');
 
+
 /**
  * This function creates a cookie from the token
  * @param {User} user - the user data model
@@ -11,12 +12,12 @@ const passportLocal = require('../../../services/passport/passport-local');
  * @param {*} res - the response returned
  */
 const createCookieFromToken = (user, statusCode, req,res) =>{
-    const token = user.generateVerificationToken();
+    const token = user.generateVerificationToken();  
     const cookieOptions = {
         expires: new Date(Date.now()+ 10 * 24 * 60 * 60 * 1000),
         httpOnly: true,
         secure: req.secure || req.headers["x-forward-proto"] === "https",
-    };
+    };  
     res.cookie("jwt", token, cookieOptions);
 
     res.status(statusCode).json({
@@ -26,12 +27,9 @@ const createCookieFromToken = (user, statusCode, req,res) =>{
     });
 }
 
-
 module.exports = {
-
     //Register
     register: async (req, res, next) =>{
-
         passport.authenticate(
             "register",
             {session: false},
@@ -76,6 +74,27 @@ module.exports = {
             }
             // generate a signed son web token with the contents of user object and return it in the response
             createCookieFromToken(user, 200, req, res);
+        })(req, res, next);
+    },
+
+    //logout user
+    logout: (req,res,next) =>{
+        passport.authenticate('jwt',{session: false},(err,_,info)=>{
+            if(err){
+                let message = err;
+                if(info){
+                    message = info.message;
+                }
+                debug(message)
+                return res.status(401).json({
+                    status: "error",
+                    error:{
+                        message,
+                    },
+                });
+            }
+            res.clearCookie('jwt');
+            res.status(200).json({success: 'Logout Successful'})
         })(req, res, next);
     },
 }
