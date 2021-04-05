@@ -1,20 +1,21 @@
+"use strict"
 let mongoose = require('mongoose');
 
 const User = new mongoose.Schema({
     name:{
         type: String,
         unique: true,
-        required: true
+        required: [true, 'Username is required']
     },
     email: {
         type: String,
         unique: true,
-        required: true
+        required: [true, 'Email is required']
     },
     password:{
         type: String,
         unique: true,
-        required: true
+        required: [true,'Password is required']
     },
 });
 

@@ -13,7 +13,7 @@ const Category = new mongoose.Schema({
     shop_id: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Shop',
-        required: true
+        //required: true
     }
 },{
     timestamps: true,

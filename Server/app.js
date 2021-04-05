@@ -8,6 +8,11 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const db = require('./src/database/db');
 const { createServer } = require('http');
+const passport = require('passport');
+const cookieParser = require('cookie-parser');
+const {config} = require('dotenv');
+
+config()
 
 //assignments
 const app = express();
@@ -26,6 +31,9 @@ app.use(morgan('tiny'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
+app.use(cookieParser());
+
+passport.initialize();
 
 //db connection
 db().then(() => createServer(app).listen(port, ()=>{
@@ -37,6 +45,7 @@ db().then(() => createServer(app).listen(port, ()=>{
 const adminRouter = require('./src/api/routes/admin/AdminRoutes');
 const ClientRouter = require('./src/api/routes/client/ClientRoutes');
 const adminAuthRouter = require('./src/api/routes/admin/auth/AuthRoutes');
+
 
 //use routes
 app.use('/admin',adminRouter);
