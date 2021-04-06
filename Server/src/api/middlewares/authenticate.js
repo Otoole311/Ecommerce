@@ -31,7 +31,7 @@ authenticate: (req, res, next) => {
     }
 
     req.user = user;
-    debug(user);
+    debug(req.user);
     return next();
     })(req, res, next);
 },

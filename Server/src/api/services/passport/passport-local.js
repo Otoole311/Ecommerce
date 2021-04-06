@@ -49,7 +49,7 @@ passport.use(
 passport.use(
     'register',
     new Strategy(authFields,async (req, email, password, cb) =>{
-        console.log('inside passport')
+        //console.log('inside passport')
         try{
             //console.log('Entering')
             const checkEmail = await User.checkExistingField('email',email);
