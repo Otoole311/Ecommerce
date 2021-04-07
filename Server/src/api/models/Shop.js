@@ -18,17 +18,5 @@ const Shop = new mongoose.Schema({
     strict: true
 });
 
-/**
- * Defining foreign key references
- */
-Shop.virtual('Categories',{
-    ref: 'Category',
-    localField: '_id',
-    foreignField: 'shop_id'
-});
-
-//set Object and json property to true. default is set to false
-Shop.set('toObject',{virtuals: true});
-Shop.set('toJSON',{virtuals: true});
-
+require('./model-methods/ShopMethods')(Shop);
 module.exports = mongoose.model('Shop',Shop);

@@ -11,7 +11,7 @@ const jwtPrivateSecret = process.env.JWT_PRIVATE_SECRET.replace(/\\n/g, "\n");
 module.exports = function(User){
 
     /**
-     * Befor the user data is saved, hash the user's password.
+     * Before the user data is saved, hash the user's password.
      */
     User.pre("save", async function (next) {
         if (!this.password || !this.isModified("password")) return next;
