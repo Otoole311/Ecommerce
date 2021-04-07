@@ -1,4 +1,5 @@
 const debug = require('debug')('app:ClientController');
+const Shop = require('../../models/Shop');
 const Category = require('../../models/Category');
 const SubCategory = require('../../models/SubCategory');
 const Product = require('../../models/Product');
@@ -25,14 +26,63 @@ const Product = require('../../models/Product');
 
 
 module.exports = {
-    list_categories: function(req,res){
-        Category.find({},function(err, docs){
-            if(err){
-                debug(err)
-                res.status(404).send({Message: "Unable to Fetch categories."})
-            }
-            res.status(200).json(docs)
+
+    //list shop by id
+    list_shop: function(req,res){
+        const shopID = req.params.id;
+        Shop.findById(shopID)
+        .populate({path: 'Categories'})
+        .then(data =>{
+            res.status(200).json(data);
+            return;
         })
-    }
+        .catch(FindErr =>{
+            debug(FindErr.message);
+            res.status(404).send({FindError: FindErr.message});
+        })
+    },
+
+    //list category by id
+    list_category: function(req,res){
+        const categoryID = req.params.id;
+        Category.findById(categoryID)
+        .populate({path: 'SubCategories'})
+        .then(data =>{
+            res.status(200).json(data);
+            return;
+        })
+        .catch(FindErr =>{
+            debug(FinrErr);
+            res.status(404).send({FindError: FindErr.message})     
+        });
+    },
+
+    //list selected subcategory by id
+    list_subcategory: function(req,res){
+        const subCategoryID = req.params.id;
+        SubCategory.findById(subCategoryID)
+        .populate({path: 'Products'})
+        .then(data =>{
+            res.status(200).json(data);
+            return;
+        })
+        .catch(FindErr =>{
+            debug(FindErr.message);
+            res.status(404).send({"Find Error": FindErr.message});
+        });
+    },
+
+    list_product: function(req,res){
+        const productID = req.params.id;
+        Product.findById(productID)
+        .then(data =>{
+            res.status(200).json(data);
+            return;
+        })
+        .catch(FindErr =>{
+            debug(FindErr.message);
+            res.status(404).send({"Find Error": FindErr.message});
+        });
+    },
 }
 

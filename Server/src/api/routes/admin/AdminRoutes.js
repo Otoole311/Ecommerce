@@ -16,9 +16,10 @@ express.application.group = express.Router.group = function(path, middleware, co
  * Create Routes
  */
 adminRouter.group('/create',authenticate, function(){
+    adminRouter.post('/shop',adminController.create_shop); //create shop
     adminRouter.post('/category',adminController.create_category); //create shop category
-    adminRouter.post('/subcategory',authenticate,adminController.create_sub_category); //create subcategory under category
-    adminRouter.post('/product',authenticate,adminController.create_product); //create product under subcategory.
+    adminRouter.post('/subcategory',adminController.create_sub_category); //create subcategory under category
+    adminRouter.post('/product',adminController.create_product); //create product under subcategory.
 });
 
 /**

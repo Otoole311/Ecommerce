@@ -50,4 +50,4 @@ const adminAuthRouter = require('./src/api/routes/admin/auth/AuthRoutes');
 //use routes
 app.use('/admin',adminRouter);
 app.use('/admin/auth',adminAuthRouter);
-app.use('/client',ClientRouter);
+app.use('/api/ci',ClientRouter);
