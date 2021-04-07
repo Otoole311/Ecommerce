@@ -12,6 +12,11 @@ const User = new mongoose.Schema({
         unique: true,
         required: [true, 'Email is required']
     },
+    type:{
+        type: String,
+        enum: ['customer','merchant'],
+        default: 'merchant'
+    },
     password:{
         type: String,
         unique: true,
