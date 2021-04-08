@@ -1,5 +1,5 @@
 let mongoose = require('mongoose');
-const Product = require('../models/Product');
+const Product = require('../models/Product').default;
 
 const SubCategory = new mongoose.Schema({
     name:{

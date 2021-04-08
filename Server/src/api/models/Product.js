@@ -1,5 +1,4 @@
 let mongoose = require('mongoose');
-const SubCategory = require('../models/SubCategory');
 
 /**
  * Product model structure.
@@ -26,9 +25,4 @@ const Product = new mongoose.Schema({
     timestamps: true,
     strict: true
 });
-
-
-
-
-
 module.exports = mongoose.model('Product',Product);

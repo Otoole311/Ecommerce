@@ -1,9 +1,11 @@
+"use strict"
+const debug = require('debug')('app:model:Category');
 
 /**
  * This module contains methods for the category model.
  * @param {Category} Category 
  */
-"use strict"
+
 module.exports = function(Category){
 
     /**
