@@ -2,7 +2,7 @@
  * This module contains methods for the Subcategory model.
  * @param {SubCategory} SubCategory 
  */
-module.exports = function(SubCategory){
+module.exports = function(SubCategory,Product){
     SubCategory.virtual('Products',{
         ref: 'Product',
         localField: '_id',

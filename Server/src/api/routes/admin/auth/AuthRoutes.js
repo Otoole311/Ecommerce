@@ -1,8 +1,6 @@
 const express = require('express');
 const adminAuthRouter = express.Router();
 const authController = require('../../../controllers/admin/auth/AuthController');
-//const authenticate = require('../../../middlewares/authenticate');
-
 /**
  * Register user
  */

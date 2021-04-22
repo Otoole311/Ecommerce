@@ -1,4 +1,5 @@
 let mongoose = require('mongoose');
+const Subcategory = require('./SubCategory');
 const Category = new mongoose.Schema({
     name: {
         type: String,
@@ -16,5 +17,5 @@ const Category = new mongoose.Schema({
     strict: true
 });
 
-require('./model-methods/CategoryMethods')(Category);
+require('./model-methods/CategoryMethods')(Category,Subcategory);
 module.exports = mongoose.model('Category',Category);

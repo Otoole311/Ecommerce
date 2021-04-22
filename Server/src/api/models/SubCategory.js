@@ -17,5 +17,5 @@ const SubCategory = new mongoose.Schema({
     strict: true
 });
 
-require('./model-methods/SubCategoryMethods')(SubCategory);
+require('./model-methods/SubCategoryMethods')(SubCategory,Product);
 module.exports = mongoose.model('SubCategory',SubCategory);

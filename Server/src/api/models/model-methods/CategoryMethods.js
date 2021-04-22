@@ -6,7 +6,7 @@ const debug = require('debug')('app:model:Category');
  * @param {Category} Category 
  */
 
-module.exports = function(Category){
+module.exports = function(Category,Subcategory){
 
     /**
      * Defining foreign key references

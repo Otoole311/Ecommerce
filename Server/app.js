@@ -1,7 +1,7 @@
 //requires
 const express = require('express');
 const chalk = require('chalk');
-const debug = require('debug');
+const debug = require('debug')('app:Server');
 const morgan = require('morgan');
 const path = require('path');
 const bodyParser = require('body-parser');
@@ -39,6 +39,7 @@ passport.initialize();
 db().then(() => createServer(app).listen(port, ()=>{
     debug(`listening on port + ${chalk.green(port)}`);
 })).catch((err) =>{
+    console.log({error: err});
 });
 
 //routes
@@ -46,6 +47,9 @@ const adminRouter = require('./src/api/routes/admin/AdminRoutes');
 const ClientRouter = require('./src/api/routes/client/ClientRoutes');
 const adminAuthRouter = require('./src/api/routes/admin/auth/AuthRoutes');
 
+app.get('/',function(req,res){
+    res.status(200).send("Connected to server")
+})
 
 //use routes
 app.use('/admin',adminRouter);
