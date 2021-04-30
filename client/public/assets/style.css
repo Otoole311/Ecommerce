@@ -1,0 +1,1187 @@
+.mediaViewInfo {
+    --web-view-name: Web 1920 – 2;
+    --web-view-id: Web_1920__2;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+:root {
+    --web-view-ids: Web_1920__2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+#Web_1920__2 {
+    position: absolute;
+    width: 1920px;
+    height: 2582px;
+    background-color: rgba(160, 141, 120, 1);
+    overflow: hidden;
+    --web-view-name: Web 1920 – 2;
+    --web-view-id: Web_1920__2;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+
+#Rectangle_1 {
+    fill: rgba(255, 255, 255, 1);
+}
+
+.Rectangle_1 {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 141px;
+    left: 0px;
+    top: 0px;
+}
+
+#Dog_Father {
+    left: 64px;
+    top: 45px;
+    position: absolute;
+    overflow: visible;
+    width: 476px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Herculanum;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 67px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Path_4 {
+    fill: rgba(0, 0, 0, 0);
+    stroke: rgba(0, 0, 0, 1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.Path_4 {
+    overflow: visible;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    left: 1780px;
+    top: 89.5px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Path_90 {
+    fill: rgba(10, 31, 59, 1);
+}
+
+.Path_90 {
+    overflow: visible;
+    position: absolute;
+    width: 44.918px;
+    height: 46.873px;
+    left: 1513px;
+    top: 54.064px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Account {
+    left: 1568.5px;
+    top: 63px;
+    position: absolute;
+    overflow: visible;
+    width: 97px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: PT Sans Caption;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Bag {
+    left: 1729px;
+    top: 63px;
+    position: absolute;
+    overflow: visible;
+    width: 45px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: PT Sans Caption;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Path_24 {
+    fill: rgba(255, 245, 235, 1);
+}
+
+.Path_24 {
+    overflow: visible;
+    position: absolute;
+    width: 1920px;
+    height: 526.819px;
+    left: 0px;
+    top: 141px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Path_93 {
+    fill: rgba(255, 245, 235, 1);
+}
+
+.Path_93 {
+    overflow: visible;
+    position: absolute;
+    width: 1920px;
+    height: 526.819px;
+    left: 0px;
+    top: 1203px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Path_95 {
+    fill: rgba(255, 255, 255, 1);
+}
+
+.Path_95 {
+    overflow: visible;
+    position: absolute;
+    width: 1920px;
+    height: 361px;
+    left: 0px;
+    top: 2239.501px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Rectangle_102 {
+    fill: rgba(255, 245, 235, 1);
+}
+
+.Rectangle_102 {
+    filter: drop-shadow(5px 10px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 393px;
+    height: 320px;
+    left: 1315px;
+    top: 813px;
+}
+
+#Rectangle_143 {
+    fill: rgba(255, 245, 235, 1);
+}
+
+.Rectangle_143 {
+    filter: drop-shadow(5px 10px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 393px;
+    height: 320px;
+    left: 563px;
+    top: 813px;
+}
+
+#Rectangle_144 {
+    fill: rgba(160, 141, 120, 1);
+}
+
+.Rectangle_144 {
+    filter: drop-shadow(5px 10px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 393px;
+    height: 320px;
+    left: 574px;
+    top: 1309px;
+}
+
+#Rectangle_146 {
+    fill: rgba(250, 249, 246, 1);
+}
+
+.Rectangle_146 {
+    filter: drop-shadow(5px 10px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 393px;
+    height: 320px;
+    left: 574px;
+    top: 1839px;
+}
+
+#Rectangle_147 {
+    fill: rgba(250, 249, 246, 1);
+}
+
+.Rectangle_147 {
+    filter: drop-shadow(5px 10px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 393px;
+    height: 320px;
+    left: 1315px;
+    top: 1839px;
+}
+
+#Rectangle_145 {
+    fill: rgba(160, 141, 120, 1);
+}
+
+.Rectangle_145 {
+    filter: drop-shadow(5px 10px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 393px;
+    height: 320px;
+    left: 1315px;
+    top: 1309px;
+}
+
+#dog2 {
+    position: absolute;
+    width: 524px;
+    height: 516px;
+    left: 574px;
+    top: 621px;
+    overflow: visible;
+}
+
+#dog_train {
+    position: absolute;
+    width: 528px;
+    height: 416px;
+    left: 676px;
+    top: 1805px;
+    overflow: visible;
+}
+
+#Todays_Deals {
+    left: 601px;
+    top: 64px;
+    position: absolute;
+    overflow: visible;
+    width: 165px;
+    white-space: nowrap;
+    text-align: right;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Pets___Services {
+    left: 893px;
+    top: 64px;
+    position: absolute;
+    overflow: visible;
+    width: 177px;
+    white-space: nowrap;
+    text-align: right;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Contact_Us {
+    left: 1197px;
+    top: 64px;
+    position: absolute;
+    overflow: visible;
+    width: 123px;
+    white-space: nowrap;
+    text-align: right;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Shop_now {
+    left: 1355px;
+    top: 947px;
+    position: absolute;
+    overflow: visible;
+    width: 76px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Shop_now_ {
+    left: 604px;
+    top: 947px;
+    position: absolute;
+    overflow: visible;
+    width: 76px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Shop_now_ba {
+    left: 584px;
+    top: 1457px;
+    position: absolute;
+    overflow: visible;
+    width: 123px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Shop_now_bb {
+    left: 1304px;
+    top: 1457px;
+    position: absolute;
+    overflow: visible;
+    width: 123px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Book_now {
+    left: 603px;
+    top: 1968px;
+    position: absolute;
+    overflow: visible;
+    width: 81px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Book_now_ {
+    left: 1325px;
+    top: 1968px;
+    position: absolute;
+    overflow: visible;
+    width: 81px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Rectangle_8 {
+    fill: transparent;
+}
+
+.Rectangle_8 {
+    position: absolute;
+    overflow: visible;
+    width: 358px;
+    height: 469px;
+    left: 781px;
+    top: 729px;
+}
+
+#dogshirt {
+    position: absolute;
+    width: 259px;
+    height: 244px;
+    left: 857px;
+    top: 1329px;
+    overflow: visible;
+}
+
+#collar {
+    position: absolute;
+    width: 315px;
+    height: 241.5px;
+    left: 650px;
+    top: 1350.5px;
+    overflow: visible;
+}
+
+#Breeds {
+    left: 140px;
+    top: 901px;
+    position: absolute;
+    overflow: visible;
+    width: 231px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Sonic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Todays_Deals_bb {
+    left: 140px;
+    top: 332px;
+    position: absolute;
+    overflow: visible;
+    width: 494px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Sonic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 66px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Accessories {
+    left: 140px;
+    top: 1428px;
+    position: absolute;
+    overflow: visible;
+    width: 398px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Sonic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Dog_Training {
+    left: 148px;
+    top: 1931px;
+    position: absolute;
+    overflow: visible;
+    width: 421px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: Sonic;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#lui-peng-ybHtKz5He9Y-unsplash {
+    position: absolute;
+    width: 536px;
+    height: 400px;
+    left: 562px;
+    top: 199px;
+    overflow: visible;
+}
+
+#ash-goldsbrough-v0_MCllHY9M-un {
+    opacity: 0.121;
+    position: absolute;
+    width: 367px;
+    height: 275px;
+    left: 1243px;
+    top: 199px;
+    overflow: visible;
+}
+
+#Line_3 {
+    fill: transparent;
+    stroke: rgba(10, 31, 59, 1);
+    stroke-width: 4px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.Line_3 {
+    overflow: visible;
+    position: absolute;
+    width: 198px;
+    height: 4px;
+    left: 218.5px;
+    top: 413.5px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Mask_Group_33 {
+    position: absolute;
+    width: 54px;
+    height: 49px;
+    left: 1678px;
+    top: 54px;
+    overflow: visible;
+}
+
+#Group_148 {
+    position: absolute;
+    width: 384px;
+    height: 299px;
+    left: 900px;
+    top: 250px;
+    overflow: visible;
+}
+
+#Rectangle_30 {
+    opacity: 0.378;
+    fill: rgba(207, 164, 150, 1);
+}
+
+.Rectangle_30 {
+    position: absolute;
+    overflow: visible;
+    width: 384px;
+    height: 299px;
+    left: 0px;
+    top: 0px;
+}
+
+#Golden__Retriever__bl {
+    left: 131px;
+    top: 40px;
+    position: absolute;
+    overflow: hidden;
+    width: 238px;
+    height: 32px;
+    text-align: left;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Golden__Retriever__bl {
+    left: 131px;
+    top: 40px;
+    position: absolute;
+    overflow: hidden;
+    width: 238px;
+    height: 32px;
+    text-align: left;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#ID100_bn {
+    left: 166px;
+    top: 81px;
+    position: absolute;
+    overflow: visible;
+    width: 51px;
+    height: 32px;
+    text-align: left;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#ID100_bn {
+    left: 166px;
+    top: 81px;
+    position: absolute;
+    overflow: visible;
+    width: 51px;
+    height: 32px;
+    text-align: left;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Lorem_ipsum_dolor_sit_amet_con {
+    left: 132px;
+    top: 134px;
+    position: absolute;
+    overflow: hidden;
+    width: 236px;
+    height: 85px;
+    text-align: left;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Line_4 {
+    fill: transparent;
+    stroke: rgba(10, 31, 59, 1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.Line_4 {
+    overflow: visible;
+    position: absolute;
+    width: 1px;
+    height: 34px;
+    left: 139.5px;
+    top: 78.5px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Mask_Group_34 {
+    position: absolute;
+    width: 18px;
+    height: 22px;
+    left: 145px;
+    top: 84px;
+    overflow: visible;
+}
+
+#Group_149 {
+    opacity: 0.121;
+    position: absolute;
+    width: 340px;
+    height: 205px;
+    left: 1474px;
+    top: 234px;
+    overflow: visible;
+}
+
+#Rectangle_30_bs {
+    opacity: 0.378;
+    fill: rgba(207, 164, 150, 1);
+}
+
+.Rectangle_30_bs {
+    position: absolute;
+    overflow: visible;
+    width: 264px;
+    height: 205px;
+    left: 0px;
+    top: 0px;
+}
+
+#Blue_Eyes_ {
+    left: 96px;
+    top: 27px;
+    position: absolute;
+    overflow: hidden;
+    width: 245px;
+    height: 22px;
+    text-align: left;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Lorem_ipsum_dolor_sit_amet_con_bu {
+    left: 91px;
+    top: 87px;
+    position: absolute;
+    overflow: hidden;
+    width: 162px;
+    height: 68px;
+    text-align: left;
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Dogbowl {
+    position: absolute;
+    width: 371px;
+    height: 418px;
+    left: 698px;
+    top: 1421px;
+    overflow: visible;
+}
+
+#dogtag {
+    position: absolute;
+    width: 258px;
+    height: 154px;
+    left: 773px;
+    top: 1267px;
+    overflow: visible;
+}
+
+#Group_151 {
+    position: absolute;
+    width: 363px;
+    height: 118.001px;
+    left: 1418px;
+    top: 2342px;
+    overflow: visible;
+}
+
+#FOLLOW_US {
+    left: 54px;
+    top: 0px;
+    position: absolute;
+    overflow: visible;
+    width: 149px;
+    white-space: nowrap;
+    text-align: right;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgba(65, 70, 77, 1);
+}
+
+#Group_12 {
+    position: absolute;
+    width: 54px;
+    height: 56.001px;
+    left: 0px;
+    top: 62px;
+    overflow: visible;
+}
+
+#Rectangle {
+    fill: transparent;
+}
+
+.Rectangle {
+    position: absolute;
+    overflow: visible;
+    width: 28px;
+    height: 28px;
+    left: 13px;
+    top: 0px;
+}
+
+#Fill_1 {
+    fill: rgba(65, 70, 77, 1);
+}
+
+.Fill_1 {
+    overflow: visible;
+    position: absolute;
+    width: 54px;
+    height: 51.001px;
+    left: 0px;
+    top: 5px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Fill_1_b {
+    fill: rgba(65, 70, 77, 1);
+}
+
+.Fill_1_b {
+    overflow: visible;
+    position: absolute;
+    width: 62.501px;
+    height: 50.001px;
+    left: 97px;
+    top: 68px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Group_14 {
+    position: absolute;
+    width: 50.956px;
+    height: 50.956px;
+    left: 202.501px;
+    top: 67.045px;
+    overflow: visible;
+}
+
+#Path {
+    fill: rgba(65, 70, 77, 1);
+}
+
+.Path {
+    overflow: visible;
+    position: absolute;
+    width: 50.956px;
+    height: 50.956px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Mask_Group_1 {
+    position: absolute;
+    width: 64px;
+    height: 51px;
+    left: 299px;
+    top: 67px;
+    overflow: visible;
+}
+
+#Recycling_Help_Help_Center_Con {
+    left: 1041px;
+    top: 2339px;
+    position: absolute;
+    overflow: visible;
+    width: 143px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(65, 70, 77, 1);
+}
+
+#About_Born_in_PC_Protect_Our__ {
+    left: 781px;
+    top: 2342px;
+    position: absolute;
+    overflow: visible;
+    width: 111px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(65, 70, 77, 1);
+}
+
+#HEAR_IT_FIRST {
+    left: 256px;
+    top: 2342px;
+    position: absolute;
+    overflow: visible;
+    width: 178px;
+    white-space: nowrap;
+    text-align: right;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    color: rgba(65, 70, 77, 1);
+}
+
+#Rectangle_28 {
+    fill: rgba(65, 70, 77, 1);
+}
+
+.Rectangle_28 {
+    position: absolute;
+    overflow: visible;
+    width: 453px;
+    height: 82px;
+    left: 136px;
+    top: 2416px;
+}
+
+#Group_3 {
+    transform: matrix(1, 0, 0, 1, 620, 2430.0001) rotate(-90deg);
+    transform-origin: center;
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+#Rectangle_cb {
+    fill: transparent;
+    stroke: rgba(65, 70, 77, 1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 10;
+    shape-rendering: auto;
+}
+
+.Rectangle_cb {
+    position: absolute;
+    overflow: visible;
+    width: 58px;
+    height: 58px;
+    left: 0px;
+    top: 0px;
+}
+
+#Path_cc {
+    fill: transparent;
+    stroke: rgba(65, 70, 77, 1);
+    stroke-width: 3px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 10;
+    shape-rendering: auto;
+}
+
+.Path_cc {
+    overflow: visible;
+    position: absolute;
+    width: 6px;
+    height: 10px;
+    transform: translate(0px, 18.982px) matrix(1, 0, 0, 1, -11.5089, 22.4911) rotate(90deg);
+    transform-origin: center;
+    left: 0px;
+    top: 0px;
+}
+
+#Sign_up_for_Emails {
+    left: 275px;
+    top: 2444px;
+    position: absolute;
+    overflow: visible;
+    width: 176px;
+    white-space: nowrap;
+    text-align: right;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 1);
+}
+
+#Line_5 {
+    fill: transparent;
+    stroke: rgba(112, 112, 112, 1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.Line_5 {
+    overflow: visible;
+    position: absolute;
+    width: 42.581px;
+    height: 2px;
+    left: 1360.5px;
+    top: 969.5px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Line_8 {
+    fill: transparent;
+    stroke: rgba(112, 112, 112, 1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.Line_8 {
+    overflow: visible;
+    position: absolute;
+    width: 42.581px;
+    height: 2px;
+    left: 609.5px;
+    top: 969.5px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Line_6 {
+    fill: transparent;
+    stroke: rgba(112, 112, 112, 1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.Line_6 {
+    overflow: visible;
+    position: absolute;
+    width: 63px;
+    height: 2px;
+    left: 615.5px;
+    top: 1481px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Line_10 {
+    fill: transparent;
+    stroke: rgba(112, 112, 112, 1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.Line_10 {
+    overflow: visible;
+    position: absolute;
+    width: 63px;
+    height: 2px;
+    left: 1335.5px;
+    top: 1481px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Line_7 {
+    fill: transparent;
+    stroke: rgba(112, 112, 112, 1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.Line_7 {
+    overflow: visible;
+    position: absolute;
+    width: 63px;
+    height: 2px;
+    left: 611px;
+    top: 1992px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#Line_9 {
+    fill: transparent;
+    stroke: rgba(112, 112, 112, 1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+
+.Line_9 {
+    overflow: visible;
+    position: absolute;
+    width: 63px;
+    height: 2px;
+    left: 1333px;
+    top: 1992px;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+#dog2_ck {
+    position: absolute;
+    width: 532px;
+    height: 524px;
+    left: 1416px;
+    top: 668px;
+    overflow: visible;
+}
+
+#Foreign {
+    left: 587px;
+    top: 892px;
+    position: absolute;
+    overflow: visible;
+    width: 106px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Foreign_cm {
+    left: 587px;
+    top: 1402px;
+    position: absolute;
+    overflow: visible;
+    width: 106px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Aerobics {
+    left: 587px;
+    top: 1912px;
+    position: absolute;
+    overflow: visible;
+    width: 112px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Local {
+    left: 1336px;
+    top: 892px;
+    position: absolute;
+    overflow: visible;
+    width: 106px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Local_cp {
+    left: 1336px;
+    top: 1402px;
+    position: absolute;
+    overflow: visible;
+    width: 70px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: rgba(10, 31, 59, 1);
+}
+
+#Ethiques {
+    left: 1336px;
+    top: 1912px;
+    position: absolute;
+    overflow: visible;
+    width: 113px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    color: rgba(10, 31, 59, 1);
+}
