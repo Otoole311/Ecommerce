@@ -1,0 +1,31 @@
+/*Nav bar css*/
+
+.StyledSideNav {
+    /* Fixed Sidebar (stay in place on scroll and position relative to viewport) */
+    position: fixed;
+    height: 100%;
+    /* Set the width of the sidebar */
+    width: 75px;
+    /* Stay on top of everything */
+    z-index: 1;
+    /* Stay at the top */
+    top: 3.4em;
+    /* Black */
+    background-color: #222;
+    /* Disable horizontal scroll */
+    overflow-x: hidden;
+    padding-top: 10px;
+}
+
+.StyledNavItem {
+    height: 70px;
+    /* width must be same size as NavBar to center */
+    width: 75px;
+    /* Aligns <a> inside of NavIcon div */
+    text-align: center;
+    /* Puts space between NavItems */
+    margin-bottom: 0;
+}
+
+
+/*Navbar css ends*/
