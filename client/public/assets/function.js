@@ -119,7 +119,7 @@ var Application = function() {
 			window.dispatchEvent(new Event(self.APPLICATION_COMPLETE));
 		}
 
-		if (self.initialized==false) {
+		if (self.initialized===false) {
 			if (self.enableDeepLinking) {
 				self.syncronizeViewToURL();
 			} 
@@ -196,7 +196,7 @@ var Application = function() {
 				if (self.lastModifiedDate==null) {
 
 					// File system does not send headers in FF so get blob if possible
-					if (protocol=="file:") {
+					if (protocol==="file:") {
 						self.refreshRequest.open("GET", url, true);
 						self.refreshRequest.responseType = "blob";
 					}
@@ -236,7 +236,7 @@ var Application = function() {
 					}
 					
 					var method;
-					if (protocol=="file:") {
+					if (protocol==="file:") {
 						method = "GET";
 					}
 					else {
