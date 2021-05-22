@@ -1,3 +1,11 @@
+#brandName{
+    font-size: 220%;
+}
+
+a{
+    text-decoration: none;
+}
+
 .mediaViewInfo {
     --web-view-name: Web 1920 – 2;
     --web-view-id: Web_1920__2;
@@ -52,8 +60,9 @@
     font-family: Herculanum;
     font-style: normal;
     font-weight: normal;
-    font-size: 67px;
+    font-size: 50px;
     color: rgba(10, 31, 59, 1);
+    
 }
 
 #Path_4 {
