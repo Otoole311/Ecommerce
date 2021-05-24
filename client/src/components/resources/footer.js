@@ -17,7 +17,8 @@ export function Footer(){
 
                 {/* Links */}
                 <div className="col-sm">
-                    <p>Follow Us: Facebook, Instagram</p>
+                    {/* <p>Follow Us: Facebook, Instagram</p> */}
+                    <i class="fa fa-instagram"></i>
                 </div>
             </div>
         </footer>

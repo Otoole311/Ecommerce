@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import '../../css/pages/HomePage.css'
 import {CarouselView} from '../resources/Carousel';
+import {DarkCarouselView} from '../resources/DarkCarouselView';
 
 const data = [
     {
         title: "Test image 1",
         filePath: "assets/Images/dog2.png",
-        summary: "Starting from: $50.00.",
+        summary: "Price: $50.00.",
     },
     {
         title: "Test image 2",
         filePath: "assets/Images/dog2_ck.png",
-        summary: "Starting from: $50.00.",
+        summary: "Price: $50.00.",
     }
 ];
 
@@ -33,7 +34,7 @@ class HomePage extends Component{
                             </div>
 
                             <div className="carousel-div">
-                                <CarouselView carouseldata={data}/>
+                                <DarkCarouselView carouseldata={data}/>
                             </div>                            
                     </div>
                 </div>
@@ -61,7 +62,7 @@ class HomePage extends Component{
                             </div>
 
                             <div className="carousel-div">
-                                <CarouselView carouseldata={data}/>
+                                <DarkCarouselView carouseldata={data}/>
                             </div>                            
                     </div>
                 </div>

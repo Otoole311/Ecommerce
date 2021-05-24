@@ -1,5 +1,5 @@
-.col{
-    background-color:rgba(160, 141, 120, 1);
+.col {
+    background-color: rgba(160, 141, 120, 1);
     width: 100%;
     /* border: 1px solid red; */
     text-align: center;
@@ -7,27 +7,27 @@
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 5px 0;
-    height: 300px;
+    min-height: 280px;
 }
 
-.test-col{
+.test-col {
     background-color: rgba(255, 245, 235, 1) !important;
 }
 
-.title-div{
+.title-div {
     /* border: 2px solid blue; */
     width: 30%;
     height: 100%;
 }
 
-.carousel-div{
+.carousel-div {
     /* border: 2px solid white; */
     width: 70%;
     height: 100%;
 }
 
-.container .row .col .title-div h3{
-    margin:auto;
-    line-height:300px;
-    vertical-align:middle;
-} 
+.container .row .col .title-div h3 {
+    margin: auto;
+    line-height: 280px;
+    vertical-align: middle;
+}
