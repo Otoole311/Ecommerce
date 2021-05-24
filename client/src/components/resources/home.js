@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../../css/HomePage.css'
+import '../../css/resources/Home.css'
 
 class Home extends React.Component{
     render(){
@@ -48,14 +48,18 @@ class Home extends React.Component{
             <rect id="Rectangle_146" rx="28" ry="28" x="0" y="0" width="375" height="301">
             </rect>
             </svg>
+
                 <svg className="Rectangle_147">
             <rect id="Rectangle_147" rx="28" ry="28" x="0" y="0" width="375" height="301">
             </rect>
+
             </svg>
+
                 <svg className="Rectangle_145">
             <rect id="Rectangle_145" rx="28" ry="28" x="0" y="0" width="375" height="301">
             </rect>
             </svg>
+            
             <img alt="image_pic" id="dog2" src="assets/Images/dog2.png" srcSet="assets/Images/dog2.png 1x, assets/Images/dog2@2x.png 2x"/>
 
             <img alt="image_pic" id="dog_train" src="assets/Images/dog_train.png" srcSet="assets/Images/dog_train.png 1x, assets/Images/dog_train@2x.png 2x"/>
